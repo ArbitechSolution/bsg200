@@ -11,7 +11,7 @@ import Web3 from 'web3'
 import { toast } from 'react-toastify';
 import ReactLoading from 'react-loading';
 import {useSelector} from 'react-redux'
-const web3Supply = new Web3("https://data-seed-prebsc-1-s1.binance.org:8545/")
+const web3Supply = new Web3("https://rpc-mainnet3.wyzthchain.org")
 function Register(props, getAccount) {
     let acc = useSelector((state) => state.connect?.connection);
     let [accadress, setaccadress] = useState('')
