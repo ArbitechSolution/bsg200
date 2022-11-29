@@ -108,11 +108,11 @@ function Stack_level() {
                                 <p className=' aliment'>{Number(userIncome).toFixed(2)}</p>
                             </div>
                             <div className="d-flex S_sss">
-                                <p className='s_l_p'>BNB Balance</p>
+                                <p className='s_l_p'>WYZ Balance</p>
                                 <p className=' aliment'>{userAccountbalance}</p>
                             </div>
                             <div className="d-flex S_sss">
-                                <p className='s_l_p'>ULE Balance:</p>
+                                <p className='s_l_p'>USDT Balance:</p>
                                 <p className=' aliment '>{usdtBalance} ULE</p>
                             </div>
                             <div className="d-flex S_sss">

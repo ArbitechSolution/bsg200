@@ -4,17 +4,17 @@ let isItConnected = false;
 const networks = {
   bsc: {
     chainId: `0x${Number(97).toString(16)}`,
-    chainName: "BNB Smart Chain Testnet",
+    chainName: "WYZ Mainnet",
     nativeCurrency: {
-      name: "BNB",
-      symbol: "tBNB",
+      name: "WYZTH",
+      symbol: "WYZTH",
       decimals: 18,
     },
     rpcUrls: [
-      "https://data-seed-prebsc-1-s3.binance.org:8545/",
-      "https://polygon-rpc.com"
+      "https://rpc-mainnet3.wyzthchain.org",
+      // "https://polygon-rpc.com"
     ],
-    blockExplorerUrls: ["https://bscscan.com"],
+    blockExplorerUrls: ["https://legacy.wyzthscan.org/"],
   },
 };
 const changeNetwork = async ({ networkName }) => {
@@ -61,7 +61,7 @@ export const loadWeb3 = async () => {
       await window.web3.eth.getChainId((err, netId) => {
         // console.log("networkId==>", netId);
         switch (netId.toString()) {
-          case "97":
+          case "303":
             isItConnected = true;
             break;
           // case "137":
