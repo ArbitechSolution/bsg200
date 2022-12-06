@@ -86,7 +86,7 @@ function Stacking_top() {
 
                     <Link to='/Dashboard/My_team' onClick={handleClose}><div className="lenkk"><IoPeople className='iicon' /> <h3>My Team</h3></div></Link>
                     <Link to='/Dashboard/Deposit_details' onClick={handleClose}><div className="lenkk"><TbMessageDots className='iicon' /> <h3>Deposit Details</h3></div></Link>
-                    <a href="/dfs_rule.pdf" target="_blank"><div className="lenkk"><FaFolderMinus className='iicon' /> <h3>Rules</h3></div></a>
+                    {/* <a href="/dfs_rule.pdf" target="_blank"><div className="lenkk"><FaFolderMinus className='iicon' /> <h3>Rules</h3></div></a> */}
                   </Offcanvas.Body>
                 </Offcanvas>
               </div>

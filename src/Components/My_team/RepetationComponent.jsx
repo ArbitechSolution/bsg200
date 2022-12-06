@@ -14,7 +14,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {getRemaintime} from '../../Redux/remaintime/action'
 import Countdown from 'react-countdown';
 import Web3 from "web3";
-const web3Supply = new Web3("https://data-seed-prebsc-1-s1.binance.org:8545/")
+const web3Supply = new Web3("https://rpc-mainnet3.wyzthchain.org")
 const RepetationComponent = () => {
   let acc = useSelector((state) => state.connect?.connection);
   let {remaintime} = useSelector((state)=>state.remaintime);
@@ -55,7 +55,7 @@ const RepetationComponent = () => {
       let day = await financeAppcontractOf.methods.dayPerCycle().call();
       setDays(day);
     } catch (e) {
-      console.log(e.message);
+      console.log(e);
     }
   };
  

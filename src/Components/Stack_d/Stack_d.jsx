@@ -54,7 +54,7 @@ function Stack_d() {
                                     <div className="card stack_sub_cards">
                                         <img src={d3} alt="" className='stack_d_img' />
                                         <Button className='start_btn s_d_W' onClick={() => setModalShow1(true)}>
-                                            withdraw
+                                            Withdraw
                                         </Button>
                                         <Withdraw_m
                                             show={modalShow1}

@@ -8,8 +8,8 @@ function Homef() {
         <div className="row">
           <div className="col-lg-6">
             <h1 className='homef_h1'>
-              DFS Decentralized<br></br> finance system is a future. <br /> <br /></h1>
-            <p className='homef_p' style={{ textAlign: "justify " }}> The DFS is a future that cannot be let
+              wUSDT Decentralized<br></br> finance system is a future. <br /> <br /></h1>
+            <p className='homef_p' style={{ textAlign: "justify " }}> The wUSDT is a future that cannot be let
               down, and it is the expectation of all
               our participants. We will all get rich benefits
               here. It is the most sincere and

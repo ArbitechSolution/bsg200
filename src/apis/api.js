@@ -3,7 +3,7 @@ let isItConnected = false;
 // const chainId = 137 // Polygon Mainnet
 const networks = {
   bsc: {
-    chainId: `0x${Number(97).toString(16)}`,
+    chainId: `0x${Number(303).toString(16)}`,
     chainName: "WYZ Mainnet",
     nativeCurrency: {
       name: "WYZTH",

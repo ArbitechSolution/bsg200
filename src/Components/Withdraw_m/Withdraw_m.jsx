@@ -90,7 +90,7 @@ function Withdraw_m(props) {
                                     <div className="icons_m">
                                         <Button onClick={() => props.onHide()} className='color-black' style={{ backgroundColor: "#ffbf00", border: "1px solid #ffbf00" }}><MdArrowBackIos ></MdArrowBackIos></Button>
                                     </div>
-                                    <h4 className='ms-5 modal_h4'>Withdraw</h4>
+                                    <h4 className='ms-5 modal_h4 text-center'>Withdraw</h4>
                                 </div>
                             </div>
                         </div>
@@ -103,23 +103,22 @@ function Withdraw_m(props) {
                                 <div className="d-flex justify-content-evenly">
                                     <h5 className='text-white'>You have to upgrade your package to get passive income</h5>
                                     <p className='light mt-3'></p>
-                                    {/* <p className='witddraw_p'>{withdrawDetail.unlock} ULE</p> */}
                                 </div>
                             </div>}
                         </div>
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="d-flex justify-content-between">
+                        <div className="row ">
+        
+                                <div className="col-lg-12 d-flex justify-content-between ">
                                     <p className='text-white'>Unlock principal</p>
-                                    <p className='witddraw_p'>{withdrawDetail.unlock} ULE</p>
+                                    <p className='witddraw_p text-white '>{withdrawDetail.unlock} wUSDT</p>
                                 </div>
-                            </div>
+                           
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>Cycle reward</p>
-                                    <p className='witddraw_p'>{withdrawDetail.statics} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.statics} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +126,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>capitals</p>
-                                    <p className='witddraw_p'>{withdrawDetail.capitals} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.capitals} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +134,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>1st level</p>
-                                    <p className='witddraw_p'>{withdrawDetail.directs} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.directs} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +142,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>2-4 level</p>
-                                    <p className='witddraw_p'>{withdrawDetail.level4Released} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.level4Released} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +150,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>5-25 level</p>
-                                    <p className='witddraw_p'>{withdrawDetail.level5Released} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.level5Released} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +158,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>Freezing</p>
-                                    <p className='witddraw_p'>{withdrawDetail.level4Freezed} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.level4Freezed} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +166,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>Diamond reward</p>
-                                    <p className='witddraw_p'>{withdrawDetail.diamond} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.diamond} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +174,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>Double Diamond reward</p>
-                                    <p className='witddraw_p'>{withdrawDetail.doubleDiamond} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.doubleDiamond} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +182,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>Top player reward</p>
-                                    <p className='witddraw_p'>{withdrawDetail.top} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.top} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +190,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>Total withdrawl</p>
-                                    <p className='witddraw_p'>{withdrawDetail.totalWithdrawls} ULE</p>
+                                    <p className='witddraw_p text-white'>{withdrawDetail.totalWithdrawls} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +204,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>Total Withdrawable</p>
-                                    <p className='witddraw_p'>{all_val} ULE</p>
+                                    <p className='witddraw_p text-white'>{all_val} wUSDT</p>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +213,7 @@ function Withdraw_m(props) {
                             <div className="col-lg-12">
                                 <div className="d-flex justify-content-between">
                                     <p className='text-white'>Maximum withdraw</p>
-                                    <p className='witddraw_p'>{available_withdraw} ULE</p>
+                                    <p className='witddraw_p text-white'>{available_withdraw} wUSDT</p>
                                 </div>
                             </div>
                         </div>} */}

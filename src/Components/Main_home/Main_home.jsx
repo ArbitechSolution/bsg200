@@ -14,9 +14,9 @@ function Main_home() {
       <Homef />
       <Start />
       <Project_images />
-      <Benifits />
-      <Tier />
-      <Roadmap />
+      {/* <Benifits /> */}
+      {/* <Tier />
+      <Roadmap /> */}
     </div>
   )
 }

@@ -26,8 +26,8 @@ function Start() {
             </div>
             <h4 className='beni_h4 sh'>1.Deposit
             </h4>
-            <p className='text-white'>Minimum 50 DAI,
-              maximum 10,000 DAI,
+            <p className='text-white'>Minimum 50 wUSDT,
+              maximum 10,000 wUSDT,
               in multiples of 50, the
               amount of each
               deposit must be
@@ -88,7 +88,7 @@ function Start() {
               mechanism
             </h4>
             <p className='text-white'>
-              25% of all income goes into split
+              30% of all income goes into split
               account (this amount is only
               used as a new account deposit),
               this account is set up with
@@ -100,7 +100,7 @@ function Start() {
               registered account can only be
               activated once, and this function
               cannot be used for the activated
-              account. 75% of all earnings are
+              account. 70% of all earnings are
               used for withdrawals, no
               additional withdrawal fees.
             </p>

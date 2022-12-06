@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 // import Moment from 'react-moment';
 import moment from 'moment';
 import { ColorRing } from 'react-loader-spinner'
-const web3Supply = new Web3("https://data-seed-prebsc-1-s1.binance.org:8545/")
+const web3Supply = new Web3("https://rpc-mainnet3.wyzthchain.org")
 function Latest_Deposit() {
 
 	const [orderInfos, setOrderInfo] = useState('')
@@ -42,7 +42,7 @@ function Latest_Deposit() {
 						let userinfos = await financeAppcontractOf.methods.orderInfos(elementKey, j).call()
 
 						let address_here = elementKey?.substring(0, 15) + "..." + elementKey?.substring(elementKey?.length - 15);
-						let reward = web3.utils.fromWei(userinfos.amount)
+						let reward = web3Supply.utils.fromWei(userinfos.amount)
 						reward = parseFloat(reward).toFixed(3)
 						let newArr = { address: address_here, userinfos1: moment((userinfos?.start * 1) * 1000).format('D MMM YYYY hh:mm:ss a'), userinfos: (userinfos?.start), amount: reward }
 						objectdata.push(newArr)
@@ -95,7 +95,7 @@ function Latest_Deposit() {
 								<span className='inResponse' style={{marginLeft:'1rem'}}>{item.address?.substring(0, 4) + "..." + item.address?.substring(item.address?.length - 4)}</span>
 								<span><Moment format="D MMM YYYY hh:mm:ss a" unix >{`${item.userinfos}`}</Moment></span>
 
-								<div className='group_img '><img  src={m1} className='rounded-circle' alt="" width="15%" />&nbsp;&nbsp; &nbsp; {item.amount} &nbsp;ULE</div>
+								<div className='group_img '><img  src={m1} className='rounded-circle' alt="" width="15%" />&nbsp;&nbsp; &nbsp; {item.amount} &nbsp;wUSDT</div>
 							</div>)
 					})}</>}
 
